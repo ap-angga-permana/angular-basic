@@ -4,7 +4,7 @@ import {AppComponent} from "./app.component";
 
 const routes: Routes = [
   {
-    path: 'basic',
+    path: '',
     loadChildren: () => import('./basic/basic.module').then(m => m.BasicModule)
   },
 ];
