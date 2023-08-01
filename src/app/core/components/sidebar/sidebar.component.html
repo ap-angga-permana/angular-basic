@@ -1,0 +1,6 @@
+<div class="d-flex flex-column min-vh-100">
+  <ng-container *ngFor="let item of menuItems">
+    <a role="button" [routerLink]="item.route">{{item.title}}</a>
+  </ng-container>
+</div>
+
