@@ -1,0 +1,26 @@
+<div class="d-flex flex-column">
+  <p>basic works!</p>
+  {{name}}
+  <!--  one way binding-->
+  <app-input-text class="mb-2" [value]="name" (valueChange)="changeName($event)"></app-input-text>
+  <!--  two way binding-->
+  <app-input-text [(value)]="name"></app-input-text>
+  <hr/>
+
+  <ng-container *ngFor="let item of model | keyvalue">
+    <span>{{item.key}}: {{item.value}}</span>
+    <app-input-text [(value)]="item.value"></app-input-text>
+  </ng-container>
+
+  <hr/>
+  <h3>Contoh ngModel</h3>
+  {{accessorName}}
+  <label>native input</label>
+  <input class="form-control" [(ngModel)]="accessorName">
+  <label>custom input</label>
+  <app-input-with-accessor [(ngModel)]="accessorName"></app-input-with-accessor>
+</div>
+
+
+
+
