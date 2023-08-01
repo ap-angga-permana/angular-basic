@@ -14,7 +14,7 @@ interface MenuItem {
 export class SidebarComponent {
 
   menuItems: MenuItem[] = [
-    {title: 'Basic Input Output', route: '/basic-input-output'},
+    {title: 'Basic Input Output', route: '/basic'},
     ];
 
 }
